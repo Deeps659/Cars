@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cars View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CarsViewController" customModule="CARS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="470" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RJa-PU-kPd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CarsTableViewCell" id="RxP-KI-AFJ" customClass="CarsTableViewCell" customModule="CARS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="470"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RxP-KI-AFJ" id="uzi-3z-kpd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="470"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="awI-mN-ghq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="350" id="YKU-jT-l7H"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q7 - Greatness starts, when you don't stop." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfu-iM-yfG">
+                                                    <rect key="frame" x="16" y="300" width="337.5" height="57.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhY-bI-fx5">
+                                                    <rect key="frame" x="16" y="370.5" width="33" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Audi Q7 is the result of an ambitious idea: never cease to improve." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3V-4Y-OKj">
+                                                    <rect key="frame" x="16" y="399.5" width="340" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PhY-bI-fx5" secondAttribute="trailing" constant="20" symbolic="YES" id="3vg-M8-jzE"/>
+                                                <constraint firstItem="Cfu-iM-yfG" firstAttribute="leading" secondItem="uzi-3z-kpd" secondAttribute="leading" constant="16" id="4jf-2s-qAT"/>
+                                                <constraint firstItem="PhY-bI-fx5" firstAttribute="leading" secondItem="uzi-3z-kpd" secondAttribute="leading" constant="16" id="Nb4-V2-PhV"/>
+                                                <constraint firstItem="M3V-4Y-OKj" firstAttribute="leading" secondItem="uzi-3z-kpd" secondAttribute="leading" constant="16" id="dyb-Ul-691"/>
+                                                <constraint firstItem="awI-mN-ghq" firstAttribute="leading" secondItem="uzi-3z-kpd" secondAttribute="leading" id="fFx-pd-V4i"/>
+                                                <constraint firstAttribute="trailing" secondItem="awI-mN-ghq" secondAttribute="trailing" id="iRN-fb-sfn"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M3V-4Y-OKj" secondAttribute="trailing" constant="20" symbolic="YES" id="mxE-j2-DPb"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cfu-iM-yfG" secondAttribute="trailing" constant="20" symbolic="YES" id="nFq-1l-vDF"/>
+                                                <constraint firstItem="PhY-bI-fx5" firstAttribute="top" secondItem="Cfu-iM-yfG" secondAttribute="bottom" constant="13" id="ulx-Kf-f1i"/>
+                                                <constraint firstItem="M3V-4Y-OKj" firstAttribute="top" secondItem="PhY-bI-fx5" secondAttribute="bottom" constant="13" id="ybr-CV-QTk"/>
+                                                <constraint firstItem="awI-mN-ghq" firstAttribute="top" secondItem="uzi-3z-kpd" secondAttribute="top" id="z7z-qn-Yrl"/>
+                                                <constraint firstItem="Cfu-iM-yfG" firstAttribute="top" secondItem="uzi-3z-kpd" secondAttribute="top" constant="300" id="zHJ-SP-BFT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="carImage" destination="awI-mN-ghq" id="2FG-tp-Cpt"/>
+                                            <outlet property="dateLabel" destination="PhY-bI-fx5" id="UN5-3r-vEk"/>
+                                            <outlet property="descLabel" destination="M3V-4Y-OKj" id="LOM-KO-7TJ"/>
+                                            <outlet property="titleLabel" destination="Cfu-iM-yfG" id="xah-j8-RDm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="s6f-11-fgI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="g7l-MU-vS0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RJa-PU-kPd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7UN-da-KBe"/>
+                            <constraint firstItem="RJa-PU-kPd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K5y-Kc-eU8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RJa-PU-kPd" secondAttribute="trailing" id="ag3-oD-A5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RJa-PU-kPd" secondAttribute="bottom" id="cyj-f1-xph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="RJa-PU-kPd" id="hgY-7d-7wM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="375" height="303"/>
+    </resources>
+</document>
